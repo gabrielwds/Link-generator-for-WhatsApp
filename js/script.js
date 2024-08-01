@@ -1,14 +1,13 @@
-function createWhatsAppLink(countryCode, number, message) {
+document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    let WhatsAppLink = `https://wa.me/${countryCode}${number}?text=${message}`
+    let countryCode = document.getElementById('DDI').value;
+    let number = document.getElementById('Number').value;
+    let message = document.getElementById('Message').value;
 
-    return WhatsAppLink;
-}
+    let link = `https://wa.me/${countryCode}${number}?text=${message}`
 
-let countryCode = '55';
-let number = '81999999999';
-let message = "Olá Mundo!";
+    console.log(link)
 
-let link = createWhatsAppLink(countryCode, number, message)
-
-console.log(link)
+    document.getElementById('generated-link').innerHTML = `<p>${link}</p>`
+});

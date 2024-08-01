@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Link Generator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="hero-section">
+
+        <img src="/assets/whatsapp-icon.svg" alt="logo WhatsApp" class="whatsapp-icon">
+
+        <h1>WhatsApp Link Generator</h1>
+
+        <p> Lorem ipsum amet ipsumLorem ipsum amet ipsumLorem <br>ipsum amet ipsumLorem ipsum amet ipsum</p>
+
+        <form action="" class="form-box" id="whatsapp-form">
+            <div class="form-number">
+
+                <div class="ddi-box flex-c">
+                    <label for="ddi" class="ddi-label"> DDI</label>
+                    <input type="text" placeholder="+00" name="ddi" id="DDI">
+                </div>
+
+                
+                <div class="number-box flex-c">
+                    <label for="number" class="number-label">Number</label>
+                    <input type="text" placeholder="0000 0000" name="number" id="Number">
+                </div>
+                
+            </div>
+            
+            <div class="message-box">
+                <label for="message" class="message-label">Your message</label>
+                <input type="text" placeholder="(optional)" name="message" id="Message">
+            </div>
+            
+
+            <button type="submit" class="form-button">Generate WhatsApp Link</button>
+        </form>
+
+        <div class="link-box">
+            <button id="copyboard-btn"><img src="/assets/icon-copy.svg" alt="copy-icon"></button>
+            <p id="generated-link"></p>
+        </div>
+        
+    </div>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
